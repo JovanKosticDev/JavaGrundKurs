@@ -1,21 +1,75 @@
-package com.example.interfaceandabstractclasses;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.example.concurrency;
 
 public class Main {
     public static void main(String[] args) {
-//        CarInterface carInterface = new ElectricCar("BMW I3");
-//        carInterface.start();
-//        carInterface.move(45);
+//        Thread thread = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                for(int i = 0; i < 5; i++){
+//                    System.out.println("Printing " + i + " in a worker thread");
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        });
+//        thread.start();
 //
-//        CarInterface fossilCarInterface = new FossilFuelCar("Audi A3");
-//        fossilCarInterface.start();
-//        fossilCarInterface.move(140);
+//        for(int i = 0; i < 5; i++){
+//            System.out.println("Printing " + i + " in a main thread");
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
-    TestAbstractClass testAbstractClass = new TestClass("Test");
-    testAbstractClass.print("Hallo Welt");
-    testAbstractClass.printName("Max Mustermann");
+        int a = 2;
+        int b = 0;
 
-    }
+        String name = null;
+
+
+        try{
+            name.equals("Max");
+        }catch (NullPointerException e){
+            e.printStackTrace();
+            System.out.println("Name war NULL");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
 }
